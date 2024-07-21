@@ -5,16 +5,16 @@ import Link from 'next/link';
 import Image from "next/image";
 
 const phases = [
-    { id: 1, action: '꿈 기억하기', desc: '꿈을 기억하세요', color: 'text-red-100', imageUrl: '/sitting.jpg' },
-    { id: 2, action: '이불 정리하기', desc: '이불 정리', color: 'lightgreen', imageUrl: '/images/sitting.jpg' },
-    { id: 3, action: '물 한잔과 영양제 먹기', desc: '물먹기', color: 'lightcoral', imageUrl: '/images/sitting.jpg' },
-    { id: 4, action: '10분간 명상', desc: '명상하세용', color: 'lightcoral', imageUrl: '/images/sitting.jpg' },
-    { id: 5, action: '2분간 격렬한 운동', desc: '운동이욧', color: 'lightcoral', imageUrl: '/images/sitting.jpg' },
-    { id: 6, action: '찬물샤워', desc: '샤워하세용', color: 'lightcoral', imageUrl: '/images/sitting.jpg' },
-    { id: 7, action: '따뜻한 차 마시기', desc: '차마시세용', color: 'lightcoral', imageUrl: '/images/sitting.jpg' },
-    { id: 8, action: '일기쓰기 / 계획짜기', desc: '일기쓰세용', color: 'lightcoral', imageUrl: '/images/sitting.jpg' },
-    { id: 9, action: '20분간 독서', desc: '독서하세용', color: 'lightcoral', imageUrl: '/images/sitting.jpg' },
-    { id: 10, action: '스무디 만들기', desc: '스무디 만들기', color: 'lightcoral', imageUrl: '/images/sitting.jpg' },
+    { id: 1, action: '꿈 기억하기', desc: '꿈을 기억하세요', color: 'white', imageUrl: '/sitting.jpg' },
+    { id: 2, action: '이불 정리하기', desc: '이불 정리', color: 'white', imageUrl: '/images/sitting.jpg' },
+    { id: 3, action: '물 한잔과 영양제 먹기', desc: '물먹기', color: 'white', imageUrl: '/images/sitting.jpg' },
+    { id: 4, action: '10분간 명상', desc: '명상하세용', color: 'white', imageUrl: '/images/sitting.jpg' },
+    { id: 5, action: '2분간 격렬한 운동', desc: '운동이욧', color: 'white', imageUrl: '/images/sitting.jpg' },
+    { id: 6, action: '찬물샤워', desc: '샤워하세용', color: 'white', imageUrl: '/images/sitting.jpg' },
+    { id: 7, action: '따뜻한 차 마시기', desc: '차마시세용', color: 'white', imageUrl: '/images/sitting.jpg' },
+    { id: 8, action: '일기쓰기 / 계획짜기', desc: '일기쓰세용', color: 'white', imageUrl: '/images/sitting.jpg' },
+    { id: 9, action: '20분간 독서', desc: '독서하세용', color: 'white', imageUrl: '/images/sitting.jpg' },
+    { id: 10, action: '스무디 만들기', desc: '스무디 만들기', color: 'white', imageUrl: '/images/sitting.jpg' },
 ];
 
 export default function TypeA() {
@@ -38,6 +38,8 @@ export default function TypeA() {
         }
     };
 
+    const progressBarWidth = `${((currentPhaseIndex + 1) / phases.length) * 100}%`;
+
     return (
         <div className="font-dung p-8 bg-black text-white min-h-screen flex flex-col">
             <div className="flex mb-4">
@@ -55,8 +57,9 @@ export default function TypeA() {
                             <div
                                 className="h-full"
                                 style={{
-                                    width: '100%',
+                                    width: progressBarWidth,
                                     backgroundColor: phases[currentPhaseIndex].color,
+                                    transition: 'width 0.5s ease-in-out',
                                 }}
                             ></div>
                         </div>
@@ -85,7 +88,6 @@ export default function TypeA() {
             ) : (
                 <div className="mt-2">
                     <div className="text-2xl">루틴 완료!</div>
-                    <div className="mt-1 text-base">부자 되세요!!! 홧팅!!! 좋은 하루 ❤️</div>
                     <div className="mt-4 flex justify-center">
                         <Image
                             src="/finish.png"
