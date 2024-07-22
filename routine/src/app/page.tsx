@@ -20,7 +20,7 @@ export default function Home() {
                         <div className="flex items-center justify-center w-24 h-24">
                             <Image src="/type-b.png" alt="type-b" width="100" height="100" className="max-w-full max-h-full" />
                         </div>
-                        <div className="text-xl mt-2">천만장자</div>
+                        <div className="text-xl mt-2">캐시</div>
                         <div className="text-xs border-[1px] rounded-full mt-1 px-2">난이도 중</div>
                     </div>
                 </Link>
@@ -29,7 +29,7 @@ export default function Home() {
                         <div className="flex items-center justify-center w-24 h-24">
                             <Image src="/type-c.png" alt="type-c" width="100" height="100" className="max-w-full max-h-full" />
                         </div>
-                        <div className="text-xl mt-2">백만장자</div>
+                        <div className="text-xl mt-2">허버먼</div>
                         <div className="text-xs border-[1px] rounded-full mt-1 px-2">난이도 하</div>
                     </div>
                 </Link>

@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "억만장자 루틴",
-  description: "억만장자의 루틴을 해보세용 쿄쿄",
+  title: "모닝 루틴 챌린저",
+  description: "모닝 루틴",
 };
 
 export default function RootLayout({
