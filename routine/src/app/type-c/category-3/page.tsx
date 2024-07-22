@@ -1,11 +1,13 @@
+"use client";
+
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from "next/image";
 
 const phases = [
-    { id: 1, action: '모닝 페이지 작성', desc: '꿈과 감정을 기록하세요', color: 'white', imageUrl: '/morning-pages.jpg' },
-    { id: 2, action: '명상', desc: '집중력과 평온을 찾으세요', color: 'white', imageUrl: '/meditation.jpg' },
-    // 다른 단계들
+    { id: 1, action: '점심 식사', desc: '점심은 에너지를 유지하면서도 오후에 피곤하지 않도록 단백질, 건강한 지방, 채소를 포함한 균형 잡힌 식사를 합니다.', color: 'white'},
+    { id: 2, action: '짧은 낮잠 또는 휴식', desc: '허버먼은 때때로 짧은 낮잠을 자거나 짧은 휴식 시간을 가져 재충전합니다.', color: 'white'},
+    { id: 3, action: '업무', desc: '그는 오후에는 회의, 행정 업무, 가벼운 독서 등 인지적 부담이 적은 업무를 계속합니다.', color: 'white'},
 ];
 
 export default function Page() {
@@ -40,7 +42,7 @@ export default function Page() {
                     </div>
                 </Link>
             </div>
-            <h1 className="mt-4 text-3xl">카테고리 1</h1>
+            <h1 className="mt-4 text-3xl">허버먼 오후 루틴</h1>
             {!isComplete ? (
                 <div className="mt-4 flex flex-col flex-grow justify-between">
                     <div className="flex-col">
@@ -59,13 +61,13 @@ export default function Page() {
                             <div className="text-xl">{`${currentPhaseIndex + 1} / ${phases.length}`}</div>
                         </div>
                         <div className="mt-2 text-sm">{phases[currentPhaseIndex].desc}</div>
-                        <Image
-                            src={phases[currentPhaseIndex].imageUrl}
-                            alt={phases[currentPhaseIndex].action}
-                            width="100"
-                            height="100"
-                            className="mt-2 max-w-full max-h-full"
-                        />
+                        {/*<Image*/}
+                        {/*    src={phases[currentPhaseIndex].imageUrl}*/}
+                        {/*    alt={phases[currentPhaseIndex].action}*/}
+                        {/*    width="100"*/}
+                        {/*    height="100"*/}
+                        {/*    className="mt-2 max-w-full max-h-full"*/}
+                        {/*/>*/}
                     </div>
                     <div className="flex w-full justify-center mt-4">
                         <button

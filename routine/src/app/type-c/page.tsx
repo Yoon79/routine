@@ -27,7 +27,7 @@ export default function TypeC() {
                         <div className="text-xl">오후 루틴</div>
                     </div>
                 </Link>
-                <Link href="/type-c/category-">
+                <Link href="/type-c/category-4">
                     <div className="p-5 text-center border rounded-lg flex flex-col items-center justify-center mb-4 h-18 md:h-48">
                         <div className="text-xl">저녁 루틴</div>
                     </div>
