@@ -36,7 +36,7 @@ export default function Page() {
             <div className="flex mb-4">
                 <Link href="/type-c" passHref>
                     <div className="bg-white text-black px-4 py-2">
-                        이전 페이지
+                        이전
                     </div>
                 </Link>
             </div>
@@ -58,7 +58,7 @@ export default function Page() {
                             <div className="text-2xl">{phases[currentPhaseIndex].action}</div>
                             <div className="text-xl">{`${currentPhaseIndex + 1} / ${phases.length}`}</div>
                         </div>
-                        <div className="mt-2 text-sm">{phases[currentPhaseIndex].desc}</div>
+                        <div className="mt-2 text-base">{phases[currentPhaseIndex].desc}</div>
                         {/*<Image*/}
                         {/*    src={phases[currentPhaseIndex].imageUrl}*/}
                         {/*    alt={phases[currentPhaseIndex].action}*/}
