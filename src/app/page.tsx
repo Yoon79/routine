@@ -4,7 +4,10 @@ import Image from 'next/image';
 export default function Home() {
     return (
         <div className="font-dung flex flex-col items-center justify-center min-h-screen bg-black text-white">
-            <div className="text-2xl mb-20">루틴 선택</div>
+            <div className="flex mb-20">
+            <div className="text-2xl">루틴 선택</div>
+            <div className="ml-4 text-3xl animate-bounce">★</div>
+            </div>
             <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
                 <Link href="/type-a">
                     <div className="relative">
