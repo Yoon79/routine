@@ -85,7 +85,7 @@ export default function Page() {
                     <div className="text-2xl">루틴 완료!</div>
                     <div className="mt-4 flex justify-center">
                         <Image
-                            src="/finish.png"
+                            src="/finish.gif"
                             alt="finish"
                             width="100"
                             height="100"
