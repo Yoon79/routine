@@ -5,16 +5,17 @@ import Link from 'next/link';
 import Image from "next/image";
 
 const phases = [
-    { id: 1, action: '이불정리', desc: '알람 소리를 듣고 일어나세요', color: 'lightblue', imageUrl: '/waking-up.jpg' },
-    { id: 2, action: '고양이 찾기', desc: '간단한 스트레칭을 하세요', color: 'lightgreen', imageUrl: '/stretching.jpg' },
-    { id: 3, action: '양치하기', desc: '수분을 보충하세요', color: 'lightcoral', imageUrl: '/drinking-water.jpg' },
-    { id: 4, action: '유산균과 물 마시기', desc: '얼굴을 씻고 양치하세요', color: 'lightyellow', imageUrl: '/washing-face.jpg' },
-    { id: 5, action: '뉴스 보기', desc: '간단한 아침식사를 준비하세요', color: 'lightpink', imageUrl: '/preparing-breakfast.jpg' },
-    { id: 6, action: '20분간 책 읽기', desc: '최신 뉴스를 확인하세요', color: 'lightgray', imageUrl: '/watching-news.jpg' },
-    { id: 7, action: '하루 계획짜기', desc: '하루를 시작할 옷을 입으세요', color: 'lightpurple', imageUrl: '/getting-dressed.jpg' },
-    { id: 8, action: '아침 먹기', desc: '필요한 물건을 챙기세요', color: 'lightcyan', imageUrl: '/packing-bag.jpg' },
-    { id: 9, action: '스트레칭', desc: '집에서 간단한 운동을 하세요', color: 'lightorange', imageUrl: '/home-exercise.jpg' },
-    { id: 10, action: '샤워', desc: '집을 나서세요', color: 'lightbrown', imageUrl: '/leaving-home.jpg' },
+    { id: 1, action: '이불정리', desc: '알람 소리를 듣고 일어나세요', color: 'lightblue'},
+    { id: 2, action: '고양이 찾기', desc: '간단한 스트레칭을 하세요', color: 'lightgreen' },
+    { id: 3, action: '양치하기', desc: '수분을 보충하세요', color: 'lightcoral' },
+    { id: 4, action: '유산균과 물 마시기', desc: '얼굴을 씻고 양치하세요', color: 'lightyellow' },
+    { id: 5, action: '뉴스 보기', desc: '간단한 아침식사를 준비하세요', color: 'lightpink' },
+    { id: 6, action: '20분간 책 읽기', desc: '최신 뉴스를 확인하세요', color: 'lightgray' },
+    { id: 7, action: '하루 계획짜기', desc: '하루를 시작할 옷을 입으세요', color: 'lightpurple' },
+    { id: 8, action: '아침 먹기', desc: '필요한 물건을 챙기세요', color: 'lightcyan' },
+    { id: 9, action: '청소', desc: '설거지, 빨래 등 집안일을 합니당', color: 'lightcyan' },
+    { id: 10, action: '스트레칭', desc: '집에서 간단한 운동을 하세요', color: 'lightorange'},
+    { id: 11, action: '샤워', desc: '집을 나서세요', color: 'lightbrown' },
 ];
 
 export default function TypeD() {
@@ -68,13 +69,13 @@ export default function TypeD() {
                             <div className="text-xl">{`${currentPhaseIndex + 1} / ${phases.length}`}</div>
                         </div>
                         <div className="mt-2 text-sm">{phases[currentPhaseIndex].desc}</div>
-                        <Image
-                            src={phases[currentPhaseIndex].imageUrl}
-                            alt={phases[currentPhaseIndex].action}
-                            width="100"
-                            height="100"
-                            className="mt-2 max-w-full max-h-full"
-                        />
+                        {/*<Image*/}
+                        {/*    src={phases[currentPhaseIndex].imageUrl}*/}
+                        {/*    alt={phases[currentPhaseIndex].action}*/}
+                        {/*    width="100"*/}
+                        {/*    height="100"*/}
+                        {/*    className="mt-2 max-w-full max-h-full"*/}
+                        {/*/>*/}
                     </div>
                     <div className="flex w-full justify-center mt-4">
                         <button
