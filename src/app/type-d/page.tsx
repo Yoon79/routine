@@ -5,17 +5,17 @@ import Link from 'next/link';
 import Image from "next/image";
 
 const phases = [
-    { id: 1, action: '이불정리', desc: '알람 소리를 듣고 일어나세요', color: 'lightblue'},
-    { id: 2, action: '고양이 찾기', desc: '간단한 스트레칭을 하세요', color: 'lightgreen' },
-    { id: 3, action: '양치하기', desc: '수분을 보충하세요', color: 'lightcoral' },
-    { id: 4, action: '유산균과 물 마시기', desc: '얼굴을 씻고 양치하세요', color: 'lightyellow' },
-    { id: 5, action: '뉴스 보기', desc: '간단한 아침식사를 준비하세요', color: 'lightpink' },
-    { id: 6, action: '20분간 책 읽기', desc: '최신 뉴스를 확인하세요', color: 'lightgray' },
-    { id: 7, action: '하루 계획짜기', desc: '하루를 시작할 옷을 입으세요', color: 'lightpurple' },
-    { id: 8, action: '아침 먹기', desc: '필요한 물건을 챙기세요', color: 'lightcyan' },
+    { id: 1, action: '이불정리', desc: '일어나자마자 이불 정리를 해보세요', color: 'lightblue'},
+    { id: 2, action: '고양이 찾기', desc: '사랑스런 고양이에게 가서 인사합니다', color: 'lightgreen' },
+    { id: 3, action: '양치하기', desc: '밤새 입 안에 자리잡은 세균들을 죽여줍니다', color: 'lightcoral' },
+    { id: 4, action: '유산균과 물 마시기', desc: '쩍쩍 갈라진 몸에 수분을 보충합니다. 그리고 각종 공복에 먹을 영양제를 먹습니다.', color: 'lightyellow' },
+    { id: 5, action: '뉴스 보기', desc: '새로운 정보들이나 주식창을 봐도 좋습니다.', color: 'lightpink' },
+    { id: 6, action: '20분간 책 읽기', desc: ' 이 습관은 정신적, 정서적, 생산성 측면에서 긍정적인 영향을 미칩니다.', color: 'lightgray' },
+    { id: 7, action: '하루 계획짜기', desc: '희망찬 하루 계획을 짭니다.', color: 'lightpurple' },
+    { id: 8, action: '아침 먹기', desc: '간단하게 먹거나 자신의 스타일대로 먹어도 좋습니다.', color: 'lightcyan' },
     { id: 9, action: '청소', desc: '설거지, 빨래 등 집안일을 합니당', color: 'lightcyan' },
     { id: 10, action: '스트레칭', desc: '집에서 간단한 운동을 하세요', color: 'lightorange'},
-    { id: 11, action: '샤워', desc: '집을 나서세요', color: 'lightbrown' },
+    { id: 11, action: '샤워', desc: '샤워를 하며 오늘 아침을 정리하고 그리고 계획적인 하루를 보낼 준비를 합니다.', color: 'lightbrown' },
 ];
 
 export default function TypeD() {
